@@ -1,0 +1,130 @@
+body {
+  font-family: 'Outfit', sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 320px;
+  background: linear-gradient(135deg, #1e1e24, #121214);
+  color: #fff;
+}
+
+.container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 0 0 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.badge {
+  background: linear-gradient(90deg, #ff007f, #7f00ff);
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 800;
+  color: white;
+}
+
+#status {
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 20px;
+  min-height: 20px;
+}
+
+#analyzeBtn {
+  background: white;
+  color: #000;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 24px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 15px rgba(255,255,255,0.1);
+}
+
+#analyzeBtn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255,255,255,0.2);
+}
+
+#analyzeBtn:disabled {
+  background: #444;
+  color: #888;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.hidden {
+  display: none !important;
+}
+
+#resultBox {
+  margin-top: 20px;
+  padding: 15px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.1);
+  width: 100%;
+  box-sizing: border-box;
+  animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+#verdictBadge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-weight: 800;
+  font-size: 16px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.badge-true { background: #00c853; color: white; }
+.badge-exaggerated { background: #ffd600; color: black; }
+.badge-false { background: #d50000; color: white; }
+
+#summaryText {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #ddd;
+  margin: 0;
+}
+
+a { color: #00e5ff; }
+
+#fakeReviewWarning {
+  background: #ff9800;
+  color: #fff;
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#evidenceBox {
+  margin-top: 12px;
+  padding: 10px;
+  background: rgba(255,255,255,0.05);
+  border-left: 3px solid #00e5ff;
+  font-style: italic;
+  font-size: 12.5px;
+  color: #ccc;
+  text-align: left;
+}

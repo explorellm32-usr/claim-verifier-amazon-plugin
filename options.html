@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 40px;
+      background: #121212;
+      color: #e0e0e0;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      margin-top: 0;
+      color: #fff;
+    }
+
+    p {
+      color: #aaa;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .input-group {
+      margin-top: 30px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+      border: 1px solid #333;
+      background: #1e1e1e;
+      color: #fff;
+      box-sizing: border-box;
+    }
+
+    button {
+      padding: 12px 24px;
+      cursor: pointer;
+      background: #ff007f;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      width: 100%;
+      transition: background 0.2s;
+    }
+
+    button:hover {
+      background: #e60073;
+    }
+
+    #status {
+      margin-top: 15px;
+      color: #00c853;
+      font-weight: bold;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Claim Verifier Settings</h1>
+  <p>To use Gemini 3.1 Flash Lite Preview, you need to provide an API key. You can generate a free API key at <a
+      href="https://aistudio.google.com/app/apikey" target="_blank" style="color:#00e5ff;">Google AI Studio</a>.</p>
+
+  <div class="input-group">
+    <label>Google API Key:</label>
+    <input type="password" id="apiKey" placeholder="AIzaSy...">
+    <button id="saveBtn">Save Key Securely</button>
+  </div>
+
+  <div id="status"></div>
+  <script src="options.js"></script>
+</body>
+
+</html>
