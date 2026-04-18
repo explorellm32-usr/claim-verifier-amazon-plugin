@@ -19,3 +19,6 @@ A Chrome extension powered by Gemini 3.1 Flash Lite Preview. It uses AI to read 
 - Manifest V3 Chrome Extension
 - Vanilla Javascript & HTML/CSS (Glassmorphism / Dark Mode)
 - Google Gemini 3.1 Flash Lite Preview (`generativelanguage.googleapis.com`)
+
+## Video link
+https://youtu.be/jGnG3iraAP8
